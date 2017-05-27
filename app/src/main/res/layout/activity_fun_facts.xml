@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+
+                                             android:id="@+id/reltiveLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/holo_green_dark"
+                                             android:paddingBottom="16dp"
+                                             android:paddingEnd="16dp"
+                                             android:paddingLeft="16dp"
+                                             android:paddingRight="16dp"
+                                             tools:context="fshadid.funfacts.FunFactsActivity"
+                                             tools:layout_editor_absoluteX="0dp"
+                                             tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/DidYouKnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did you know? "
+        android:textColor="#80ffffff"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="Show Another Fact"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+
+        android:id="@+id/theFactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="did you know that learning is better than knowing "
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/DidYouKnow"
+        app:layout_constraintVertical_bias="0.494"
+        tools:layout_editor_absoluteX="16dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="547dp"/>
+
+</android.support.constraint.ConstraintLayout>
